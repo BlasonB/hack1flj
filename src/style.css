@@ -7,8 +7,85 @@ body {
     padding-top: 70px;
 }
 
-.navbar .
 
 .resultats {
     height: 400px;
+}
+
+.navbar_nav {
+    border: none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    ba
+}
+.navbar_color {
+    background-color: #18252e;
+}
+@media (max-width: 768px) {
+    .navbar_collapse {
+        background-color: #18252e;
+    }
+}
+.navbar_dropdown {
+    background-color: #18252e;
+    border: none;
+    border-radius: 0;
+}
+.navbar_logo {
+}
+.navbar_title {
+    display: inline;
+    color: white;
+    line-height: 24px;
+}
+.navbar_collapseButton {
+    border: none;
+}
+.navbar_collapse{
+    border-top: none;
+}
+.navbar_title {
+    color: white;
+}
+
+/*Fin Navbar */
+
+/*Footer*/
+
+.footer {
+
+}
+.footer_title {
+    color: white;
+}
+.footer_img {
+    height: 50px;
+    width: 50px;
+    margin: 5%;
+}
+.footer_legal {
+    color: white;
+}
+
+/*Fin Footer*/
+
+/*Fin Général */
+
+/*Welcome */
+
+.welcome_navRow {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.welcome_newsDiv {
+    color: #ed7a21;
+    padding:0;
+    background-color: white;
+    padding: none;
+}
+.welcome_newsH1 {
+}
+.welcome_newsP {
+
 }
