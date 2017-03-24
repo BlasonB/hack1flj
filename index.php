@@ -22,14 +22,15 @@ $json = json_decode($data, true);
 
 for ($p=0; $p <= ($nb-1); $p++) :
 
+    $id = $json['products'][$p]['code'];
     $nomProduit = $json['products'][$p]['product_name'];
     $marque = $json['products'][$p]['brands'];
     $image = $json['products'][$p]['image_small_url'];
-    $poidPortion = $json['products'][$p]['serving_size'];
+    $nutriScor = $json['products'][$p]['nutrition_grades'];
 
-    if (isset($json['products'][$p]['nutriments']['energy_serving'])){
+    if (isset($json['products'][$p]['quantity'])){
 
-    $kcal = $json['products'][$p]['nutriments']['energy_serving'];}
+    $poid = $json['products'][$p]['quantity'];}
 
     ?>
 
@@ -37,24 +38,24 @@ for ($p=0; $p <= ($nb-1); $p++) :
             <h2>Votre résultat</h2>
             <table>
                 <tr>
-                    <td><strong>Nom du produit</strong></td>
-                    <td><?=$nomProduit?></td>
+                    <td><strong>Nom du produit:</strong></td>
+                    <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
                 </tr>
                 <tr>
-                    <td><strong>Marque</strong></td>
+                    <td><strong>Marque:</strong></td>
                     <td><?=$marque?></td>
                 </tr>
                 <tr>
-                    <td><strong>Image</strong></td>
+                    <td><strong></strong></td>
                     <td><img class="thumbnail" src="<?=$image?>"/></td>
                 </tr>
                 <tr>
-                    <td><strong>Calories</strong></td>
-                    <td><?=$kcal?></td>
+                    <td><strong>Poid:</strong></td>
+                    <td><?=$poid?></td>
                 </tr>
                 <tr>
-                    <td><strong>Poids des Portions</strong></td>
-                    <td><?=$poidPortion?></td>
+                    <td><strong>Nutriscor:</strong></td>
+                    <td><?=$nutriScor?></td>
                 </tr>
             </table>
         </div>
