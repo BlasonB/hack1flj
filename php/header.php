@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-center">
                     <form action="../liste.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" name="name" placeholder="article">

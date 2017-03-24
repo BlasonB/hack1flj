@@ -1,8 +1,7 @@
 /*Général*/
 
 body {
-    background: url("../img/apple-3771.jpg") center center no-repeat fixed;
-    background-color: #e38d13;
+    background: url("../img/weightfd.jpg") center center no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,7 +24,7 @@ h2 {
 
 
 .imageacceuil {
-    background: url("../img/weightfd.jpg") center no-repeat fixed;
+    background: url("c") center no-repeat fixed;
     position: relative;
     width: 85%;
     height: 610px;
