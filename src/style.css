@@ -1,12 +1,12 @@
 /*Général*/
 
 body {
-    background: url("") center center no-repeat;
+    background: url("../img/apple-2133771.jpg") center center no-repeat fixed;
     background-color: #e38d13;
     background-size: cover;
-    position: inherit;
-    padding-top: 60px;
 }
+
+
 
 h2 {
     margin-top:50px;
@@ -23,9 +23,20 @@ h2 {
     color: #ffffff;
 }
 
+
+.imageacceuil {
+    background: url("../img/weightfd.jpg") center no-repeat fixed;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-bottom: 62.5%;
+
+    background-size: 100%;
+    z-index: -1;
+}
+
 .container_1 {
     height:200px;
-    
+
 }
 
 .navbar-default {
@@ -37,6 +48,7 @@ h2 {
 }
 
 .resultats {
+    width:315px;
     padding: 20px;
     height:400px;
     background: #ffffff;
@@ -45,7 +57,7 @@ h2 {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 td {
     padding: px;

@@ -2,7 +2,9 @@
 require('php/header.php');
 ?>
 
-    <div><img src="img/tete.jpg"></div>
+    <div class="imageacceuil">
+
+    </div>
 
 <?php
 require('php/footer.php');
