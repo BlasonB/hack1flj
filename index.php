@@ -34,31 +34,34 @@ for ($p=0; $p <= ($nb-1); $p++) :
 
     ?>
 
-        <div class="col-md-3 resultats">
-            <h2>Votre résultat</h2>
-            <table>
-                <tr>
-                    <td><strong>Nom du produit:</strong></td>
-                    <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
-                </tr>
-                <tr>
-                    <td><strong>Marque:</strong></td>
-                    <td><?=$marque?></td>
-                </tr>
-                <tr>
-                    <td><strong></strong></td>
-                    <td><img class="thumbnail" src="<?=$image?>"/></td>
-                </tr>
-                <tr>
-                    <td><strong>Poid:</strong></td>
-                    <td><?=$poid?></td>
-                </tr>
-                <tr>
-                    <td><strong>Nutriscor:</strong></td>
-                    <td><?=$nutriScor?></td>
-                </tr>
-            </table>
-        </div>
+            <div class="col-md-3 resultats">
+                <div class="divdenfer">
+                    <h2>Votre résultat</h2>
+                    <table>
+                        <tr>
+                            <td><strong>Nom du produit</strong></td>
+                            <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marque</strong></td>
+                            <td><?=$marque?></td>
+                        </tr>
+                        <tr>
+                            <td><strong></strong></td>
+                            <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Poid:</strong></td>
+                            <td><?=$poid?></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nutriscor:</strong></td>
+                            <td><?=$nutriScor?></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
 
 
 

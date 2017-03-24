@@ -1,19 +1,32 @@
 /*Général*/
 
 body {
-    background: url("") center center  no-repeat;
+    background: url("") center center no-repeat;
     background-size: cover;
-    position: relative;
-    padding-top: 70px;
+    position: inherit;
+    padding-top: 80px;
 }
 
+.navbar-default {
+    background-color: #5F5F5F;
+    border: 1px white;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 .resultats {
-    height: 400px;
-    margin-bottom: 30px;
+    padding: 20px;
+    height:400px;
+    background: #eeeeee;
+    border: 1px solid #bbbbbb;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-bottom: 20px;
 }
 td {
-    padding: 5px;
+    padding: px;
+    text-align: right;
 }
-{}
-
