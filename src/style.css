@@ -75,17 +75,35 @@ td {
 .divdenfer {
     margin-top: 150px;
     width:600px;
-    height:800px;
+    height:700px;
     background: #ffffff;
     border: 1px solid #bbbbbb;
 
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    margin: 20px;
 }
 
 .divdenferproduit {
-    padding: 50px
+    padding: 20px
 
+}
+
+.divdenferproduit h2 {
+   margin-top : 10px;
+    margin-bottom: 30px;
+
+}
+
+
+.divdenferproduit tr td {
+  margin-right: 5px;
+
+}
+.sport {
+
+}
+
+.form-group {
+    color : white;
 }

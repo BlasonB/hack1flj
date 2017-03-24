@@ -65,11 +65,8 @@ switch ($nutriScor) {
 ?>
 
 
-            <div class="col-md-3 divdenfer">
-
-
-
-                    <div class="divdenferproduit">
+            <div class="col-md-3 col-md-offset-3 divdenfer">
+                <div class="divdenferproduit">
                         <h2>Votre résultat</h2>
                     <table>
                         <tr>
@@ -85,24 +82,24 @@ switch ($nutriScor) {
                             <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
                         </tr>
                         <tr>
-                            <td><strong>Poid/litre:</strong></td>
+                            <td><strong>Poid/litre: </strong></td>
                             <td><?=$poid?></td>
                         </tr>
 
                         <tr>
-                            <td><strong>Valeur energitique/portion:</strong></td>
+                            <td><strong>Valeur energétique/portion: </strong></td>
                             <td><?=$valPortion?></td>
                         </tr>
                         <tr>
-                            <td><strong>Valeur energitique pour 100g:</strong></td>
+                            <td><strong>Valeur energétique pour 100g: </strong></td>
                             <td><?=$val100g?></td>
                         </tr>
                         <tr>
-                            <td><strong>Poid/litre d'une portion:</strong></td>
+                            <td><strong>Poids/litre d'une portion: </strong></td>
                             <td><?=$pdportion?></td>
                         </tr>
                         <tr>
-                            <td><strong>Alergens:</strong></td>
+                            <td><strong>Alergens: </strong></td>
                             <td><?=$alergen?></td>
                         </tr>
                         <tr>
@@ -111,26 +108,28 @@ switch ($nutriScor) {
                         </tr>
                     </table>
 
-                    <img src="<?=$nutriScor?>" />
-                  </div>
-
+                    <img src="<?=$nutriScor?>" class="img-responsive" />
+                </div>
             </div>
+        </div>
 
-</div>
+
+        <div class="row">
+            <div class="col-md-3 col-md-offset-4">
+            <form method="POST" action="">
+            <div class="form-group">
+                <label for="langages">choix de votre sport:</label>
+                <input class="form-control" type="text" name="sport"  id="langages"/>
+            </div>
+            <div class="form-group">
+                <label for="portion">Nombre de portions gobé :</label>
+                <input class="form-control" type="text" name="portion"  id="portion"/>
+            </div>
+            <input class="btn btn-success" type="submit" name="btnSubmit" value="GO" />
+            </form>
+          </div>
+        </div>
     </div>
-
-
-    <form method="POST" action="">
-        <div class="form-group">
-            <label for="langages">choix de votre soport:</label>
-            <input class="form-control" type="text" name="sport"  id="langages"/>
-        </div>
-        <div class="form-group">
-            <label for="portion">NOmbre de portions gobé :</label>
-            <input class="form-control" type="text" name="portion"  id="portion"/>
-        </div>
-        <input class="btn btn-success" type="submit" name="btnSubmit" value="GO" />
-    </form>
 
 <?php
 
@@ -158,6 +157,5 @@ if(isset($_POST['sport'])) {
 
 
 <?php
-<<<<<<< HEAD
 require('footer.php');
 ?>
