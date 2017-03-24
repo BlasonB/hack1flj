@@ -6,6 +6,9 @@ body {
 }
 
 
+h1 {
+    margin-bottom: 40px;
+}
 
 h2 {
     margin-top:50px;
@@ -23,21 +26,39 @@ h2 {
 
 h3 {
     background-color: transparent;
-    color: #ffffff !;
+    color: #ffffff;
 }
 
-/* -- div page d'acceuil -- */
+/* -- divs page d'acceuil -- */
+
+div.infotip {
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    width:400px;
+    height: 70px;
+    color: black;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+div p {
+
+    margin-left:5px;
+}
+
 
 div.transbox {
     margin: 30px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(210,210,210,0.6);
     border: 1px solid black;
     border-radius: 29px;
     -moz-border-radius: 29px;
     -webkit-border-radius: 29px;
     width:950px;
-    height: 300px;
-    margin-top: 30vh;
+    height: 350px;
+    margin-top: 20vh;
     color: black;
     font-size:2em;
 }
@@ -84,7 +105,15 @@ div.transbox h3 {
 
 /* -- FADE IN de la div page d'acceuil -- */
 
-.vignets {
+.vignets1 {
+    animation: fadeout 20s;
+    -moz-animation: fadeout 20s; /* Firefox */
+    -webkit-animation: fadeout 20s; /* Safari et Chrome */
+    -o-animation: fadeout 20s; /* Opera */
+}
+
+
+.vignets2 {
 
     animation: fadein 4s;
     -moz-animation: fadein 4s; /* Firefox */
@@ -116,6 +145,38 @@ div.transbox h3 {
     }
 }
 @-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeout { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeout { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeout { /* sur Opera */
     from {
         opacity:0;
     }
