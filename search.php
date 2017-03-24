@@ -44,6 +44,24 @@ else $pdportion = $json2['product']['serving_size'];
 if (isset($json2['product']['allergens'])){
 $alergen = $json2['product']['allergens'];}
 
+switch ($nutriScor) {
+    case 'A':
+        $nutriScor = 'img/nutriscore-a.svg';
+        break;
+    case 'B':
+        $nutriScor = 'img/nutriscore-b.svg';
+        break;
+    case 'C':
+        $nutriScor = 'img/nutriscore-c.svg';
+        break;
+    case 'D':
+        $nutriScor = 'img/nutriscore-d.svg';
+        break;
+    case 'E':
+        $nutriScor = 'img/nutriscore-e.svg';
+        break;
+}
+
 ?>
 
 
@@ -67,10 +85,7 @@ $alergen = $json2['product']['allergens'];}
                             <td><strong>Poid/litre:</strong></td>
                             <td><?=$poid?></td>
                         </tr>
-                        <tr>
-                            <td><strong>Nutriscor:</strong></td>
-                            <td><?=$nutriScor?></td>
-                        </tr>
+
                         <tr>
                             <td><strong>Valeur energitique/portion:</strong></td>
                             <td><?=$valPortion?></td>
@@ -92,6 +107,8 @@ $alergen = $json2['product']['allergens'];}
                             <td><?=$id?></td>
                         </tr>
                     </table>
+
+                    <img src="<?=$nutriScor?>" />
                 </div>
             </div>
 

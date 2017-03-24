@@ -36,6 +36,24 @@ require('php/header.php');
                 if (isset($json['products'][$p]['quantity'])){
                     $poid = $json['products'][$p]['quantity'];}
 
+                switch ($nutriScor) {
+                    case 'A':
+                        $nutriScor = 'img/nutriscore-a.svg';
+                        break;
+                    case 'B':
+                        $nutriScor = 'img/nutriscore-b.svg';
+                        break;
+                    case 'C':
+                        $nutriScor = 'img/nutriscore-c.svg';
+                        break;
+                    case 'D':
+                        $nutriScor = 'img/nutriscore-d.svg';
+                        break;
+                    case 'E':
+                        $nutriScor = 'img/nutriscore-e.svg';
+                        break;
+                }
+
                 ?>
 
 
@@ -57,11 +75,10 @@ require('php/header.php');
                             <td><strong>Poid:</strong></td>
                             <td><?=$poid?></td>
                         </tr>
-                        <tr>
-                            <td><strong>Nutriscor:</strong></td>
-                            <td><?=$nutriScor?></td>
-                        </tr>
+
                         </table>
+
+                         <img src="<?=$nutriScor?>" />
                     </div>
                 </div>
 
