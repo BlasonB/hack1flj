@@ -27,7 +27,8 @@ h2 {
 
 h3 {
     background-color: transparent;
-    color: #ffffff;
+    color: #ffffff !important;
+
 }
 
 /* -- divs page d'acceuil -- */
@@ -47,6 +48,7 @@ div.infotip {
 div p {
 
     margin-left:5px;
+
 }
 
 
@@ -229,4 +231,20 @@ div.transbox h3 {
 
 .form-group {
     color : white;
+}
+
+h4 {
+
+    color : white;
+    font-size : 30px;
+    text-align: center;
+    width:360px;
+    padding: 20px;
+    height:150px;
+    background: rgb(95,95,95);
+    border-radius : 3px;
+    border: 1px solid #bbbbbb;
+
+
+
 }

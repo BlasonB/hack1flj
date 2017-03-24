@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#langages').autocomplete({
-        serviceUrl: '../comple.php',
+        serviceUrl: 'comple.php',
         dataType: 'json'
     });
 });
