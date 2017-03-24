@@ -3,9 +3,15 @@ require('php/header.php');
 ?>
 <div class="container-fluid">
     <div class="row">
-<?php
 
-$data = file_get_contents('Https://world.openfoodfacts.org/cgi/search.pl?search_terms=pizza&search_simple=1&action=process&json=1');
+<?php
+$name ='pizza';
+$nb = 6;
+
+$name = $_GET['name'];
+$nb = $_GET['nb'];
+
+$data = file_get_contents('Https://world.openfoodfacts.org/cgi/search.pl?search_terms='.$name.'&search_simple=1&action=process&json=1');
 
 $json = json_decode($data, true);
 
@@ -15,13 +21,16 @@ $json = json_decode($data, true);
 
 //var_dump($json);
 
-for ($p=0; $p <= 10; $p++) :
+for ($p=0; $p <= ($nb-1); $p++) :
 
-    $nomProduit = $json['products'][$p]['product_name_fr'];
+    $nomProduit = $json['products'][$p]['product_name'];
     $marque = $json['products'][$p]['brands'];
     $image = $json['products'][$p]['image_small_url'];
     $poidPortion = $json['products'][$p]['serving_size'];
-    $kcal = $json['products'][$p]['nutriments']['energy_serving'];
+
+    if (isset($json['products'][$p]['nutriments']['energy_serving'])){
+
+    $kcal = $json['products'][$p]['nutriments']['energy_serving'];}
 
     ?>
 

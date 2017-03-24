@@ -31,11 +31,14 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <form action="../search.php" class="navbar-form navbar-left">
+                    <form action="../index.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
+                            <input type="text" class="form-control" name="name" placeholder="Search">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nb" placeholder="Nb Articles">
+                        </div>
+                        <button type="submit" class="btn btn-default" name="btnSubmit">Submit</button>
                     </form>
                 </ul>
             </div><!-- /.navbar-collapse -->
