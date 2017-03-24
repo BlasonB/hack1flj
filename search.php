@@ -7,6 +7,8 @@ require('php/header.php');
 
 <?php
 
+
+
 $id = $_GET['id'];
 
 $url = "http://world.openfoodfacts.org/api/v0/product/'.$id.'json";
@@ -42,6 +44,24 @@ else $pdportion = $json2['product']['serving_size'];
 if (isset($json2['product']['allergens'])){
 $alergen = $json2['product']['allergens'];}
 
+switch ($nutriScor) {
+    case 'A':
+        $nutriScor = 'img/nutriscore-a.svg';
+        break;
+    case 'B':
+        $nutriScor = 'img/nutriscore-b.svg';
+        break;
+    case 'C':
+        $nutriScor = 'img/nutriscore-c.svg';
+        break;
+    case 'D':
+        $nutriScor = 'img/nutriscore-d.svg';
+        break;
+    case 'E':
+        $nutriScor = 'img/nutriscore-e.svg';
+        break;
+}
+
 ?>
 
 
@@ -65,10 +85,7 @@ $alergen = $json2['product']['allergens'];}
                             <td><strong>Poid/litre:</strong></td>
                             <td><?=$poid?></td>
                         </tr>
-                        <tr>
-                            <td><strong>Nutriscor:</strong></td>
-                            <td><?=$nutriScor?></td>
-                        </tr>
+
                         <tr>
                             <td><strong>Valeur energitique/portion:</strong></td>
                             <td><?=$valPortion?></td>
@@ -90,6 +107,8 @@ $alergen = $json2['product']['allergens'];}
                             <td><?=$id?></td>
                         </tr>
                     </table>
+
+                    <img src="<?=$nutriScor?>" />
                 </div>
             </div>
 
@@ -102,16 +121,19 @@ $alergen = $json2['product']['allergens'];}
             <label for="langages">choix de votre soport:</label>
             <input class="form-control" type="text" name="sport"  id="langages"/>
         </div>
+        <div class="form-group">
+            <label for="portion">NOmbre de portions gobé :</label>
+            <input class="form-control" type="text" name="portion"  id="portion"/>
+        </div>
         <input class="btn btn-success" type="submit" name="btnSubmit" value="GO" />
     </form>
 
 <?php
 
-$calorialiment = 540;
+($calorialiment = ($valPortion/ 4.1868));
 
 include 'connect.php';
 if(isset($_POST['sport'])) {
-
     $bdd = mysqli_connect(SERVER, USER, PASS, DB);
     mysqli_set_charset($bdd, 'utf8');
 
@@ -119,9 +141,9 @@ if(isset($_POST['sport'])) {
     $res = mysqli_query($bdd, $req);
     while ($data = mysqli_fetch_assoc($res)) {
         $kal = $data['calorie'];
-        $temps = floor($calorialiment / $kal);
-        $tempsmin = ((($calorialiment / $kal) - $temps) * 60);
-        echo 'temps ' . $temps . 'cdcsdc' . round($tempsmin) . 'fefsf';
+        $temps = floor(($calorialiment * $_POST['portion']) / $kal);
+        $tempsmin = (((($calorialiment * $_POST['portion'])/ $kal) - $temps) * 60);
+        echo 'Il te faut ' . $temps . 'H et ' . round($tempsmin) . 'min pour conso toutes les calories.';
 
     }
 
@@ -131,7 +153,7 @@ if(isset($_POST['sport'])) {
 ?>
 
 
-
 <?php
 require('php/footer.php');
 ?>
+
