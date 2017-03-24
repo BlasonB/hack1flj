@@ -2,16 +2,18 @@
 require('php/header.php');
 ?>
 
+    <div class="container-fluid text-center container_1">
+        <h2>Votre résultat</h2>
+    </div>
     <div class="container-fluid">
         <div class="row">
-
             <?php
 
 
             $name = $_GET['name'];
             $nb = $_GET['nb'];
 
-            $data = file_get_contents('Https://world.openfoodfacts.org/cgi/search.pl?search_terms='.$name.'&search_simple=1&action=process&json=1');
+            $data = file_get_contents('Https://fr.openfoodfacts.org/cgi/search.pl?search_terms='.$name.'&search_simple=1&action=process&json=1');
 
             $json = json_decode($data, true);
 
@@ -36,35 +38,32 @@ require('php/header.php');
 
                 ?>
 
-                <div class="col-md-3 resultats">
-                    <div class="divdenfer">
-                        <h2>Votre résultat</h2>
-                        <table>
-                            <tr>
-                                <td><strong>Nom du produit</strong></td>
-                                <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Marque</strong></td>
-                                <td><?=$marque?></td>
-                            </tr>
-                            <tr>
-                                <td><strong></strong></td>
-                                <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Poid:</strong></td>
-                                <td><?=$poid?></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Nutriscor:</strong></td>
-                                <td><?=$nutriScor?></td>
-                            </tr>
+
+                <div class="col-xs-12 col-sm-3 resultats">
+                    <div class="text-center">
+
+                        <strong>Nom du produit</strong></td>
+                        <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marque</strong></td>
+                            <td><?=$marque?></td>
+                        </tr>
+                        <tr>
+                            <td><strong></strong></td>
+                            <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Poid:</strong></td>
+                            <td><?=$poid?></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nutriscor:</strong></td>
+                            <td><?=$nutriScor?></td>
+                        </tr>
                         </table>
                     </div>
                 </div>
-
-
 
 
 
