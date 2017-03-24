@@ -29,7 +29,7 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <form action="../index.php" method="get" class="navbar-form navbar-left">
+                    <form action="../liste.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" name="name" placeholder="Search">
                         </div>
