@@ -31,7 +31,7 @@
                 <ul class="nav navbar-nav navbar-center">
                     <form action="liste.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="article">
+                            <input type="text" class="form-control" name="name" placeholder="Marques, catégories, ...">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" name="nb" placeholder="Nb Articles">
