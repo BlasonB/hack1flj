@@ -3,10 +3,10 @@ require('header.php');
 ?>
 
     <div class="container-fluid text-center container_1">
-        <h2>Votre résultat</h2>
+        <h2>Vos résultat</h2>
     </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style=" margin-left: 75px;">
             <?php
 
 

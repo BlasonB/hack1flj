@@ -198,9 +198,9 @@ div.transbox h3 {
 /*search */
 
 .divdenfer {
-    margin-top: 150px;
-    width:600px;
-    height:700px;
+    margin-top: 270px;
+    width:500px;
+    height:630px;
     background: #ffffff;
     border: 1px solid #bbbbbb;
 
@@ -214,10 +214,12 @@ div.transbox h3 {
 
 }
 
-.divdenferproduit h2 {
-   margin-top : 10px;
-    margin-bottom: 30px;
-
+.pro {
+    margin-top: -130px;
+    margin-bottom: 76px;
+    background-color: rgb(95,95,95);
+    text-align: center;
+    color: white;
 }
 
 
@@ -234,7 +236,6 @@ div.transbox h3 {
 }
 
 h4 {
-
     color : white;
     font-size : 30px;
     text-align: center;
@@ -245,6 +246,32 @@ h4 {
     border-radius : 3px;
     border: 1px solid #bbbbbb;
 
-
-
 }
+a{
+    text-decoration: none;
+}
+
+.titrep{
+    text-decoration: none;
+    text-align: center;
+    color: darkred;
+    font-size: 30px;
+}
+
+.marque{
+    text-align: center;
+}
+
+.pad1{
+    margin-top: 400px;
+}
+
+.pad2{
+    margin-top: 50px;
+}
+
+.cent{
+    margin-left: auto;
+    margin-right: auto;
+}
+

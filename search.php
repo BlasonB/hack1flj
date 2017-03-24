@@ -65,41 +65,32 @@ switch ($nutriScor) {
 ?>
 
 
-            <div class="col-md-3 col-md-offset-3 divdenfer">
-                <div class="divdenferproduit">
-                        <h2>Votre résultat</h2>
+            <div class="col-md-offset-3 col-md-3 divdenfer">
+                <h2 class="pro">Votre Produit</h2>
+                <p class="divdenferproduit">
+                    <h5 class="titrep"><?=$nomProduit?></h5>
+                        <p class="marque"><?=$marque?></p>
+                         <img class="cent thumbnail img-responsive" src="<?=$image?>"/>
                     <table>
                         <tr>
-                            <td><strong>Nom du produit</strong></td>
-                            <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Marque</strong></td>
-                            <td><?=$marque?></td>
-                        </tr>
-                        <tr>
-                            <td><strong></strong></td>
-                            <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Poid/litre: </strong></td>
+                            <td><strong>Poids/litre: </strong></td>
                             <td><?=$poid?></td>
                         </tr>
 
                         <tr>
                             <td><strong>Valeur energétique/portion: </strong></td>
-                            <td><?=$valPortion?></td>
+                            <td><?=$valPortion?> Kjoul</td>
                         </tr>
                         <tr>
                             <td><strong>Valeur energétique pour 100g: </strong></td>
-                            <td><?=$val100g?></td>
+                            <td><?=$val100g?> Kjoul</td>
                         </tr>
                         <tr>
                             <td><strong>Poids/litre d'une portion: </strong></td>
                             <td><?=$pdportion?></td>
                         </tr>
                         <tr>
-                            <td><strong>Alergens: </strong></td>
+                            <td><strong>Allergènes: </strong></td>
                             <td><?=$alergen?></td>
                         </tr>
                         <tr>
@@ -108,25 +99,26 @@ switch ($nutriScor) {
                         </tr>
                     </table>
 
-                    <img src="<?=$nutriScor?>" class="img-responsive" />
-                </div>
+                    <img src="<?=$nutriScor?>" style="margin-left: auto; margin-right: auto" class="img-responsive" />
+
             </div>
-        </div>
 
 
-        <div class="row">
-            <div class="col-md-3 col-md-offset-4">
+
+
+            <div class="pad1 col-md-3">
             <form method="POST" action="">
             <div class="form-group">
                 <label for="langages">Choix de votre sport:</label>
                 <input class="form-control" type="text" name="sport"  id="langages"/>
             </div>
             <div class="form-group">
-                <label for="portion">Nombre de portions gobée :</label>
+                <label for="portion">Nombre de portions gobées :</label>
                 <input class="form-control" type="text" name="portion"  id="portion"/>
             </div>
             <input class="btn btn-success" type="submit" name="btnSubmit" value="GO" />
             </form>
+            </div>
 
 
 <?php
@@ -144,16 +136,16 @@ if(isset($_POST['sport'])) {
         $kal = $data['calorie'];
         $temps = floor(($calorialiment * $_POST['portion']) / $kal);
         $tempsmin = (((($calorialiment * $_POST['portion'])/ $kal) - $temps) * 60);
-        echo '<h4>Il te faut ' . $temps . 'H et ' . round($tempsmin) . ' min pour conso toutes les calories.</h4>';
+        echo '<div class = "pad2 col-md-3"><h4>Il te faut ' . $temps . 'H et ' . round($tempsmin) . ' min pour consommer toutes les calories.</h4></div>';
 
     }
 }
 
 ?>
             </div>
-
-        </div>
     </div>
+
+
 
 <?php
 require('footer.php');

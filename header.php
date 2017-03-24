@@ -36,7 +36,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="nb" placeholder="Nb Articles">
                         </div>
-                        <button type="submit" class="btn btn-default" name="btnSubmit">Submit</button>
+                        <button type="submit" class="btn btn-default" name="btnSubmit">GO !</button>
                     </form>
                 </ul>
             </div><!-- /.navbar-collapse -->
