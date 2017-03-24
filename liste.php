@@ -59,26 +59,12 @@ require('header.php');
 
                 <div class="col-xs-12 col-sm-3 resultats">
                     <div class="text-center">
+                        <h3><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></h3>
+                            <p><?=$marque?></p>
+                            <img class="thumbnail img-responsive" src="<?=$image?>" style=" margin-left:auto; margin-right: auto;"/>
+                            <p><strong>Poids :  </strong><?=$poid?></p>
 
-                        <strong>Nom du produit</strong></td>
-                        <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Marque</strong></td>
-                            <td><?=$marque?></td>
-                        </tr>
-                        <tr>
-                            <td><strong></strong></td>
-                            <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Poid:</strong></td>
-                            <td><?=$poid?></td>
-                        </tr>
-
-                        </table>
-
-                         <img src="<?=$nutriScor?>" />
+                         <img src="<?=$nutriScor?>" /><br />
                     </div>
                 </div>
 
