@@ -1,7 +1,7 @@
 /*Général*/
 
 body {
-    background: url("../img/apple-2133771.jpg") center center no-repeat fixed;
+    background: url("../img/apple-3771.jpg") center center no-repeat fixed;
     background-color: #e38d13;
     background-size: cover;
 }
@@ -26,12 +26,13 @@ h2 {
 
 .imageacceuil {
     background: url("../img/weightfd.jpg") center no-repeat fixed;
-    margin-right: -15px;
-    margin-left: -15px;
-    padding-bottom: 62.5%;
-
-    background-size: 100%;
-    z-index: -1;
+    position: relative;
+    width: 85%;
+    height: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-background-size:cover;
+    background-size: cover;
 }
 
 .container_1 {
