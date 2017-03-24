@@ -1,8 +1,8 @@
 <?php
 
-define("SERVER", "localhost:3306");
-define("USER", "root");
-define("PASS", "francois");
+define("SERVER", "localhost");
+define("USER", "biobio");
+define("PASS", "Matheo56");
 define("DB", "sport");
 
 
