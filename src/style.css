@@ -12,7 +12,6 @@ h2 {
     padding: 20px;
     background: #5F5F5F;
     border: 1px solid #5F5F5F;
-
     border-radius: 388px;
     -moz-border-radius: 388px;
     -webkit-border-radius: 388px;
@@ -22,22 +21,42 @@ h2 {
     color: #ffffff;
 }
 
-
-.imageacceuil {
-    background: url("c") center no-repeat fixed;
-    position: relative;
-    width: 85%;
-    height: 610px;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-background-size:cover;
-    background-size: cover;
+h3 {
+    background-color: transparent;
+    color: #ffffff !;
 }
+
+/* -- div page d'acceuil -- */
+
+div.transbox {
+    margin: 30px;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    border-radius: 29px;
+    -moz-border-radius: 29px;
+    -webkit-border-radius: 29px;
+    width:950px;
+    height: 300px;
+    margin-top: 30vh;
+    color: black;
+    font-size:2em;
+}
+
+div.transbox h3 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    opacity:1;
+}
+
+/* -- div "votre résultat" page résultat -- */
 
 .container_1 {
     height:200px;
 
 }
+
+/* -- NAVBAR -- */
 
 .navbar-default {
     background-color: #5F5F5F;
@@ -46,6 +65,8 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+/* -- Colonnes des résultats -- */
 
 .resultats {
     width:315px;
@@ -59,8 +80,48 @@ h2 {
     -webkit-border-radius: 10px;
     margin: 20px;
 }
-td {
-    padding: px;
+
+
+/* -- FADE IN de la div page d'acceuil -- */
+
+.vignets {
+
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
