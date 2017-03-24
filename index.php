@@ -1,6 +1,10 @@
 <?php
 require('php/header.php');
 ?>
+
+<div class="container-fluid text-center container_1">
+    <h2>Votre résultat</h2>
+</div>
 <div class="container-fluid">
     <div class="row">
 
@@ -34,12 +38,10 @@ for ($p=0; $p <= ($nb-1); $p++) :
 
     ?>
 
-            <div class="col-md-3 resultats">
-                <div class="divdenfer">
-                    <h2>Votre résultat</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Nom du produit</strong></td>
+            <div class="col-xs-12 col-sm-3 resultats">
+                <div class="text-center">
+
+                    <strong>Nom du produit</strong></td>
                             <td><a href="search.php?id=<?=$id?>" ><?=$nomProduit?></a></td>
                         </tr>
                         <tr>

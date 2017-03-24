@@ -31,7 +31,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <form action="../index.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Search">
+                            <input type="text" class="form-control" name="name" placeholder="article">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" name="nb" placeholder="Nb Articles">
