@@ -5,8 +5,7 @@ require('php/header.php');
     <div class="row">
 
 <?php
-$name ='pizza';
-$nb = 6;
+
 
 $name = $_GET['name'];
 $nb = $_GET['nb'];
