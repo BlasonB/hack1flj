@@ -29,23 +29,23 @@ for ($p=0; $p <= 10; $p++) :
             <h2>Votre résultat</h2>
             <table>
                 <tr>
-                    <td>Nom du produit</td>
+                    <td><strong>Nom du produit</strong></td>
                     <td><?=$nomProduit?></td>
                 </tr>
                 <tr>
-                    <td>Marque</td>
+                    <td><strong>Marque</strong></td>
                     <td><?=$marque?></td>
                 </tr>
                 <tr>
-                    <td>Image</td>
-                    <td><img src="<?=$image?>"/></td>
+                    <td><strong>Image</strong></td>
+                    <td><img class="thumbnail" src="<?=$image?>"/></td>
                 </tr>
                 <tr>
-                    <td>Calories</td>
+                    <td><strong>Calories</strong></td>
                     <td><?=$kcal?></td>
                 </tr>
                 <tr>
-                    <td>Poids des Portions</td>
+                    <td><strong>Poids des Portions</strong></td>
                     <td><?=$poidPortion?></td>
                 </tr>
             </table>
