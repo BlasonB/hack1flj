@@ -1,9 +1,9 @@
 <?php
 require('php/header.php');
 ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        
+
 <?php
 
 
@@ -33,33 +33,33 @@ for ($p=0; $p <= ($nb-1); $p++) :
 
     ?>
 
-        <div class="col-md-3 resultats">
-            <div>
-                <h2>Votre résultat</h2>
-                <table>
-                    <tr>
-                        <td><strong>Nom du produit</strong></td>
-                        <td><?=$nomProduit?></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Marque</strong></td>
-                        <td><?=$marque?></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Image</strong></td>
-                        <td><img class="thumbnail" src="<?=$image?>"/></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Calories</strong></td>
-                        <td><?=$kcal?></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Poids des Portions</strong></td>
-                        <td><?=$poidPortion?></td>
-                    </tr>
-                </table>
+            <div class="col-md-3 resultats">
+                <div class="divdenfer">
+                    <h2>Votre résultat</h2>
+                    <table>
+                        <tr>
+                            <td><strong>Nom du produit</strong></td>
+                            <td><?=$nomProduit?></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marque</strong></td>
+                            <td><?=$marque?></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image</strong></td>
+                            <td><img class="thumbnail img-responsive" src="<?=$image?>"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Calories</strong></td>
+                            <td><?=$kcal?></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Poids des Portions</strong></td>
+                            <td><?=$poidPortion?></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
 
 
 
