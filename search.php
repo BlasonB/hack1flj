@@ -7,6 +7,8 @@ require('php/header.php');
 
 <?php
 
+
+
 $id = $_GET['id'];
 
 $url = "http://world.openfoodfacts.org/api/v0/product/'.$id.'json";
