@@ -1,5 +1,5 @@
 <?php
-require('php/header.php');
+require('header.php');
 ?>
     <div class="container-fluid">
         <div class="row">
@@ -65,9 +65,12 @@ switch ($nutriScor) {
 ?>
 
 
-            <div class="col-md-3 resultats">
-                <div class="divdenfer">
-                    <h2>Votre résultat</h2>
+            <div class="col-md-3 divdenfer">
+
+
+
+                    <div class="divdenferproduit">
+                        <h2>Votre résultat</h2>
                     <table>
                         <tr>
                             <td><strong>Nom du produit</strong></td>
@@ -109,7 +112,8 @@ switch ($nutriScor) {
                     </table>
 
                     <img src="<?=$nutriScor?>" />
-                </div>
+                  </div>
+
             </div>
 
 </div>
@@ -152,5 +156,5 @@ if(isset($_POST['sport'])) {
 
 
 <?php
-require('php/footer.php');
+require('footer.php');
 ?>

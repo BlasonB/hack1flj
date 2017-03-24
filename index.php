@@ -1,5 +1,5 @@
 <?php
-require('php/header.php');
+require('header.php');
 ?>
 
     <div class="imageacceuil">
@@ -7,5 +7,5 @@ require('php/header.php');
     </div>
 
 <?php
-require('php/footer.php');
+require('footer.php');
 ?>

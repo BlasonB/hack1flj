@@ -7,8 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Eatbeat</title>
     <!-- Bootstrap -->
-    <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../src/style.css" rel="stylesheet">
+    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-fixed-top">
@@ -29,7 +29,7 @@
 
 
                 <ul class="nav navbar-nav navbar-center">
-                    <form action="../liste.php" method="get" class="navbar-form navbar-left">
+                    <form action="liste.php" method="get" class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" name="name" placeholder="article">
                         </div>
