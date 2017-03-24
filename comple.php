@@ -6,7 +6,7 @@ if(isset($_GET['query'])) {
 
     // Connexion à la base de données
     try {
-        $bdd = new PDO('mysql:host=localhost;dbname=sport', 'root ', 'francois');
+        $bdd = new PDO('mysql:host=localhost;dbname=sport', 'root', 'francois');
     } catch(Exception $e) {
         exit('Impossible de se connecter à la base de données.');
     }

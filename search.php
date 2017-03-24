@@ -118,18 +118,16 @@ switch ($nutriScor) {
             <div class="col-md-3 col-md-offset-4">
             <form method="POST" action="">
             <div class="form-group">
-                <label for="langages">choix de votre sport:</label>
+                <label for="langages">Choix de votre sport:</label>
                 <input class="form-control" type="text" name="sport"  id="langages"/>
             </div>
             <div class="form-group">
-                <label for="portion">Nombre de portions gobé :</label>
+                <label for="portion">Nombre de portions gobée :</label>
                 <input class="form-control" type="text" name="portion"  id="portion"/>
             </div>
             <input class="btn btn-success" type="submit" name="btnSubmit" value="GO" />
             </form>
-          </div>
-        </div>
-    </div>
+
 
 <?php
 
@@ -146,15 +144,16 @@ if(isset($_POST['sport'])) {
         $kal = $data['calorie'];
         $temps = floor(($calorialiment * $_POST['portion']) / $kal);
         $tempsmin = (((($calorialiment * $_POST['portion'])/ $kal) - $temps) * 60);
-        echo 'Il te faut ' . $temps . 'H et ' . round($tempsmin) . 'min pour conso toutes les calories.';
+        echo '<h4>Il te faut ' . $temps . 'H et ' . round($tempsmin) . ' min pour conso toutes les calories.</h4>';
 
     }
-
-
 }
 
 ?>
+            </div>
 
+        </div>
+    </div>
 
 <?php
 require('footer.php');
