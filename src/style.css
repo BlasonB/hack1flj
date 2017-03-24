@@ -190,3 +190,42 @@ div.transbox h3 {
 .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
 .autocomplete-selected { background: #F0F0F0; }
 .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+
+
+/*search */
+
+.divdenfer {
+    margin-top: 150px;
+    width:600px;
+    height:700px;
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.divdenferproduit {
+    padding: 20px
+
+}
+
+.divdenferproduit h2 {
+   margin-top : 10px;
+    margin-bottom: 30px;
+
+}
+
+
+.divdenferproduit tr td {
+  margin-right: 5px;
+
+}
+.sport {
+
+}
+
+.form-group {
+    color : white;
+}

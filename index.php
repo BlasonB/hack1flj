@@ -1,5 +1,5 @@
 <?php
-require('php/header.php');
+require('header.php');
 ?>
     <div class="container-fluid vignets1 text-center">
         <div class="infotip">
@@ -16,5 +16,5 @@ require('php/header.php');
     </div>
 
 <?php
-require('php/footer.php');
+require('footer.php');
 ?>
